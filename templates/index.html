@@ -1,0 +1,48 @@
+{% load static %}
+{% include 'base.html' %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <title>Weather</title>
+    <div class="parallax">
+      <div class="bg__first templatemo-position-relative">
+        <div class="container">
+          <div class="templatemo-flexbox">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="left-image wow animated fadeInLeft">
+                  <img src="{% static 'front/images/cloude.png' %}" alt="creative writing" class="img-responsive">
+                </div>
+              </div>
+              <div class="col-md-8 col-sm-8 col-xs-12">              
+                <div class="right-caption wow animated fadeInRight">
+                  <h4>Introducing New Website</h4>
+                  <h2><span class="yellow">Weather</span> App</h2>
+                  <h5>Always update information about the weather in your city</h5>
+                  <p>easily and of course for free various kinds of the latest weather information in your city such as temperature, weather conditions, coordinates, humidity and country code. </p>
+                </div>
+              </div>
+            </div>            
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="parallax">
+    {% include 'footer.html' %}
+    </div>   
+    <script src="js/vendor/jquery-1.11.1.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/wow-animate.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // wow
+        new WOW ({
+          animateClass: 'animated',
+          offset:       100
+        }).init();
+    </script>
+	<!-- templatemo 438 layer -->
+  </body>
+</html>

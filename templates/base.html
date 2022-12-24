@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 
+            Layer Template 
+            http://www.templatemo.com/preview/templatemo_438_layer
+            -->
+
+    <link rel="stylesheet" href="{% static 'front/css/bootstrap.min.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'front/css/font-awesome.min.css' %}"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'front/css/wow-animate.css' %}" />
+    <!-- Wow Animate -->
+    <link
+      rel="stylesheet"
+      href="{% static 'front/css/templatemo-style.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'app/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'app/myfont/css/all.min.css' %}" />
+    <script src="{% static 'front/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js' %}"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <div class="header" id="top">
+      <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              id="nav-toggle"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#main-nav"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand nav-link" href="{% url 'index' %}"
+              ><img
+                src="{% static 'front/images/logo.png' %}"
+                alt="Layer Template"
+            /></a>
+          </div>
+          <!--/.navbar-header-->
+          <div id="main-nav" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="{% url 'index' %}">Home</a></li>
+
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'weather' %}">Weather</a></li>
+            </ul>
+          </div>
+
+          <!--/.navbar-collapse-->
+        </div>
+        <!--/.container-->
+      </nav>
+      <!--/.navbar-->
+    </div>
+    <!--/.header-->
+    <script src="{% static 'front/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js' %}"></script>
+    <script src="{% static 'front/js/vendor/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'front/js/vendor/bootstrap.min.js' %}"></script>
+    <script src="{% static 'front/js/vendor/wow-animate.js' %}"></script>
+    <script src="{% static 'front/js/main.js' %}"></script>
+    <script src="{% static 'app/jquery/jquery.min.js'%}"></script>
+  </body>
+</html>
